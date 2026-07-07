@@ -10,7 +10,7 @@ function App() {
   const [students, setStudents] = useState([]);
 
   const getStudents = async () => {
-    const res = await fetch("https://student-hmha.onrender.com/students");
+    const res = await fetch("https://learn-5umu.onrender.com/students");
     const data = await res.json();
     setStudents(data);
   };
@@ -27,7 +27,7 @@ function App() {
   };
 
   const saveStudent = async () => {
-    await fetch("https://student-hmha.onrender.com/students", {
+    await fetch("https://learn-5umu.onrender.com/students", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
